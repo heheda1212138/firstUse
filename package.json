@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo $NPM_TOKEN"
+    "test": "echo $GITHUB_TOKEN"
   },
   "repository": {
     "type": "git",
