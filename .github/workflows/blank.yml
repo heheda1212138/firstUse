@@ -31,10 +31,6 @@ jobs:
       # Runs a single command using the runners shell
       - name: Run a one-line script
         run: |
-          sleep 10 &
-          pid=$!
-          echo "开始等待 10 秒..."
-          wait $pid
           npm run test
 
       # Runs a set of commands using the runners shell
@@ -42,6 +38,7 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
+          npm run test
         env:
           GITHUB_TOKEN: ${{ secrets.REPO_SCOPED_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
