@@ -27,7 +27,7 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Run a one-line script
-        run: echo ${{ secrets.REPO_SCOPED_TOKEN }}
+        run: npm run test
         env:
           GITHUB_TOKEN: ${{ secrets.REPO_SCOPED_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
